@@ -1,0 +1,45 @@
+@import url('./fonts.scss');
+@import "./mixins.scss";
+
+body {
+	font-family: 'M-400', sans-serif;
+	font-weight: 400;
+}
+
+.container {
+	width: 100%;
+	max-width: 1230px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+
+.line {
+	width: 42px;
+	height: 8px;
+	background: #e08631;
+	margin: 0 auto 30px;
+}
+
+.titles {
+
+
+	.site-title {
+		font-size: 32px;
+		color: $textColor;
+		padding: 30px 0 15px;
+	}
+
+	.subtitle {
+		font-size: 16px;
+		line-height: 24px;
+		color: $textColor;
+		width: 555px;
+	}
+}
+
+button {
+	border: none;
+	outline: none;
+	cursor: pointer;
+}

@@ -1,0 +1,77 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+@import "../mixins.scss";
+@import "../fonts.scss";
+
+.services {
+  padding: 100px 0;
+
+  .container {
+    .line {
+      margin: 0 0 30px 0;
+    }
+
+    .titles {
+      @include xl {
+        text-align: center;
+      }
+
+      .line {
+        @include xl {
+          margin: 0 auto;
+        }
+      }
+
+      .site-title {
+        @include xl {
+          margin: 22px 0;
+        }
+      }
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      @include xl {
+        padding-top: 30px;
+      }
+
+      .point {
+        width: 45%;
+        @include flex-center;
+        gap: 16px;
+        margin: 40px 0 0;
+
+        @include xl {
+          width: 40%;
+          max-width: 500px;
+          margin: 15px auto;
+        }
+
+        @include md {
+          width: 100%;
+        }
+
+        .image-block {
+          width: 36px;
+          text-align: center;
+        }
+
+        .text-content{
+          h3{
+            color: $green;
+          }
+          p{
+            color: $textColor;
+          }
+        }
+      }
+    }
+  }
+}

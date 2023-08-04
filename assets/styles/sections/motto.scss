@@ -1,0 +1,36 @@
+@import "../mixins.scss";
+@import "../fonts.scss";
+
+.motto {
+  padding: 100px 0;
+
+  @include md {
+    padding: 40px 0;
+  }
+
+  .container {
+    h1 {
+      font-family: "M-700";
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 96px;
+      text-align: center;
+      color: $green;
+
+      @include lg {
+        font-size: 55px;
+        line-height: 70px;
+      }
+
+      @include md {
+        font-size: 45px;
+        line-height: 70px;
+      }
+
+      @include sm {
+        font-size: 35px;
+        line-height: 40px;
+      }
+    }
+  }
+}

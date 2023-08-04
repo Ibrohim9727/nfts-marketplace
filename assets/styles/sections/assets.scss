@@ -1,0 +1,89 @@
+@import '../mixins.scss';
+@import '../fonts.scss';
+
+.assets {
+    background: $white;
+
+    .container {
+        padding: 100px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+
+        @include lg {
+            flex-direction: column;
+            gap: 50px;
+        }
+
+
+        .left {
+            color: $green;
+
+            @include md{
+
+            }
+
+            .line {
+                margin: 0 0 30px;
+
+                @include lg {
+                    margin: 0 auto 30px;
+                }
+            }
+
+            .title {
+                font-size: 32px;
+                font-weight: 400;
+                font-family: 'M-400', sans-serif;
+                line-height: 36px;
+            }
+
+            .title,
+            p {
+                @include lg {
+                    text-align: center;
+                }
+            }
+
+            p {
+                margin-top: 14px;
+                max-width: 515px;
+                font-size: 16px;
+                font-weight: 400;
+                font-family: 'M-400', sans-serif;
+                line-height: 24px;
+            }
+        }
+
+        .right {
+            color: $textColor;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 60px;
+            font-size: 14px;
+            font-weight: 400;
+            font-family: 'M-400', sans-serif;
+            line-height: 20px;
+
+            @include sm {
+                flex-direction: column;
+            }
+
+            .card {
+                margin: 0 auto;
+                max-width: 280px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 30px;
+
+                
+
+                p {
+                    max-width: 200px;
+                }
+            }
+        }
+    }
+}

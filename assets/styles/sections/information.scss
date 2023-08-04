@@ -1,0 +1,61 @@
+@import "../mixins.scss";
+@import "../fonts.scss";
+
+.information {
+  background: $whitesmoke;
+  padding: 100px 0;
+  @include md{
+    padding: 40px 0;
+  }
+
+  .container {
+    .line {
+      @include md {
+        margin-bottom: 15px;
+      }
+    }
+
+    .flex {
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      gap: 40px;
+
+      @include md {
+        flex-wrap: wrap;
+      }
+
+      .left,
+      .right {
+        width: 360px;
+
+        p {
+          font-size: 14px;
+          color: $textColor;
+          line-height: 20px;
+        }
+      }
+
+      .right {
+        .btn-right {
+          margin-top: 40px;
+          padding: 11px 18px;
+          background: $green;
+          color: $white;
+          border-radius: 6px;
+
+          @include md {
+            border-radius: 4px;
+            padding: 6px 9px;
+            margin-top: 20px;
+            font-size: 10px;
+          }
+
+          &:hover {
+            box-shadow: 0 0 10px $white;
+          }
+        }
+      }
+    }
+  }
+}

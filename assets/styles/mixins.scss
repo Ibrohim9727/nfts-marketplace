@@ -1,0 +1,36 @@
+$white: #ffffff;
+$black: #000000;
+$green: #52503b;
+$orange: #e08631;
+$whitesmoke: #faf8f0;
+$textColor: #333333;
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin xl {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: 765px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: 450px) {
+    @content;
+  }
+}

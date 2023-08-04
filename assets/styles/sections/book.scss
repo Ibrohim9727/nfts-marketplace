@@ -1,0 +1,59 @@
+@import '../mixins.scss';
+@import '../fonts.scss';
+
+.book {
+    background: $whitesmoke;
+
+    .container {
+        padding: 100px 0;
+
+        .title {
+            margin: 0 auto;
+            max-width: 533px;
+            font-size: 32px;
+            font-weight: 400;
+            font-family: 'M-400', sans-serif;
+            line-height: 36px;
+            text-align: center;
+            color: $green;
+
+            @include sm{
+                font-size: 25px;
+            }
+        }
+
+        p {
+            margin: 15px auto 0;
+            max-width: 515px;
+            font-size: 16px;
+            font-weight: 400;
+            font-family: 'M-400', sans-serif;
+            line-height: 24px;
+            text-align: center;
+            color: $green;
+        }
+
+        .btn-wrap {
+            padding-top: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            .btn-1 {
+                padding: 13px 23px;
+                background: $white;
+                color: $green;
+                border: 4px solid $green;
+                border-radius: 6px;
+            }
+
+            .btn-2 {
+                padding: 16px 26px;
+                background: $green;
+                color: $white;
+                border-radius: 6px;
+            }
+        }
+    }
+}
